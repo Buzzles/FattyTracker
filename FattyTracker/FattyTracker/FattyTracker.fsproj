@@ -46,6 +46,8 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="FattyTracker.fs" />
     <None Include="Script.fsx" />
+    <Compile Include="Models\RunDetails.fs" />
+    <Compile Include="Models\WeightDetails.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
