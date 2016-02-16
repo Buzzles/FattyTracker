@@ -3,5 +3,5 @@
 open System
 
 type RunDetails() =
-    member this.Distance : double = 0.0 
-    member this.Time : DateTime = new DateTime()
+    member val Distance : double = 0.0 with get, set
+    member val Time : DateTime = new DateTime() with get, set

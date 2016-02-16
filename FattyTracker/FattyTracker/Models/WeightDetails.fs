@@ -3,10 +3,10 @@
 open System
 
 type Weight() =
-    member this.Stones : int = 0
-    member this.Pounds : int = 0
-    member this.Ounces : int = 0
+    member val Stones : int = 0 with get, set
+    member val Pounds : int = 0 with get, set
+    member val Ounces : int = 0 with get, set
     
 type WeightDetails() =
-    member this.Date : DateTime = new DateTime()
-    member this.Weight : Weight = new Weight()
+    member val Date : DateTime = new DateTime() with get, set
+    member val Weight : Weight = new Weight() with get, set
