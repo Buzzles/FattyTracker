@@ -1,5 +1,7 @@
-﻿namespace FattyTracker.DataAccess
+﻿namespace FattyTracker.DataAccess.Concrete
 
-type LocalFileStore() =
+open FattyTracker.DataAccess
+
+type LocalFilestore() =
     interface IDataAccess with
-        member this.Save() = printfn "LocalSave fo'sure"
+        member this.Save() = printfn "localsave fo'sure"

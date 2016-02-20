@@ -1,4 +1,4 @@
 ﻿namespace FattyTracker.DataAccess
 
-type DapperHander() =
+type DapperHandler() =
     let x = 0

@@ -56,8 +56,8 @@
     <Compile Include="Models\RunDetails.fs" />
     <Compile Include="Models\WeightDetails.fs" />
     <Content Include="DataAccess\IDataAccess.fs" />
-    <Compile Include="DataAccess\LocalFileStore.fs" />
     <Compile Include="DataAccess\DapperAccess.fs" />
+    <Compile Include="DataAccess\LocalFileStore.fs" />
     <Compile Include="FattyTracker.fs" />
   </ItemGroup>
   <ItemGroup>
