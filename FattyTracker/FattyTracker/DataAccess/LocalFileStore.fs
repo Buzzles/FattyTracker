@@ -1,6 +1,4 @@
-﻿namespace FattyTracker.DataAccess.Concrete
-
-open FattyTracker.DataAccess
+﻿namespace FattyTracker.DataAccess
 
 type LocalFilestore() =
     interface IDataAccess with
