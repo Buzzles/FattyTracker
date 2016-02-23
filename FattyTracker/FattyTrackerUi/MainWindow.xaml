@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:FattyTrackerUi"
         mc:Ignorable="d"
         Title="Fatty Tracker" Height="350" Width="525">
+   
     <Grid>
-        
+        <Menu>
+            <MenuItem Name="Item1" Height="20" Width="137" Header="Menu1">
+                <TextBlock Name="MenuButton1" Text="Flagh"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel Name="ContentPanel" Margin="8,32,0,0">
+            <TextBlock Text="Hello World" Margin="0,0,0,40"/>
+            <TextBlock Text="What is your name?" />
+            <StackPanel Name="inputPanel" Orientation="Horizontal" Margin="0,20,0,20">
+                <TextBox Name="nameInput" Width="280" HorizontalAlignment="Left"/>
+                <Button Name="inputButton" Content="Say &quot;Hello&quot;" Click="button_click"/>
+            </StackPanel>
+            <TextBlock Name="greetingOutput"/>
+        </StackPanel>
     </Grid>
 </Window>
