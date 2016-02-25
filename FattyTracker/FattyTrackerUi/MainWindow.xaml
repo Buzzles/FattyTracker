@@ -6,21 +6,47 @@
         xmlns:local="clr-namespace:FattyTrackerUi"
         mc:Ignorable="d"
         Title="Fatty Tracker" Height="350" Width="525">
-   
+
     <Grid>
         <Menu>
             <MenuItem Name="Item1" Height="20" Width="137" Header="Menu1">
-                <TextBlock Name="MenuButton1" Text="Flagh"/>
+                <TextBlock Name="MenuButton1" Text="View DB Set"/>
             </MenuItem>
         </Menu>
-        <StackPanel Name="ContentPanel" Margin="8,32,0,0">
-            <TextBlock Text="Hello World" Margin="0,0,0,40"/>
-            <TextBlock Text="What is your name?" />
-            <StackPanel Name="inputPanel" Orientation="Horizontal" Margin="0,20,0,20">
-                <TextBox Name="nameInput" Width="280" HorizontalAlignment="Left"/>
-                <Button Name="inputButton" Content="Say &quot;Hello&quot;" Click="button_click"/>
-            </StackPanel>
-            <TextBlock Name="greetingOutput"/>
-        </StackPanel>
+        <TabControl Margin="10,24,10,10">
+            <TabItem Header="Graphs">
+                <Label Width="280" HorizontalAlignment="Left">Graphing Information Goes Here</Label>
+            </TabItem>
+            <TabItem Header="Data Entry" >
+                <StackPanel Grid.IsSharedSizeScope="True">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Date</Label>
+                        <TextBox Grid.Column="1" x:Name="Date">Date</TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Time</Label>
+                        <TextBox Grid.Column="1" x:Name="inputTime" >Some value1</TextBox>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Distance</Label>
+                        <TextBox Grid.Column="1" x:Name="inputDistance">Distance</TextBox>
+                    </Grid>
+                    <Button x:Name="inputButton" Content="Save Run" Click="button_click"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>

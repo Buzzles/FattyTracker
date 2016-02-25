@@ -27,7 +27,7 @@ namespace FattyTrackerUi
 
         private void button_click(object sender, RoutedEventArgs e)
         {
-            greetingOutput.Text = "Hello, " + nameInput.Text + "!";
+            ////greetingOutput.Text = "Hello, " + nameInput.Text + "!";
         }
     }
 }
