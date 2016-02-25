@@ -17,7 +17,7 @@
             <TabItem Header="Graphs">
                 <Label Width="280" HorizontalAlignment="Left">Graphing Information Goes Here</Label>
             </TabItem>
-            <TabItem Header="Data Entry" >
+            <TabItem Header="Run Entry" >
                 <StackPanel Grid.IsSharedSizeScope="True">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -25,7 +25,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0">Date</Label>
-                        <TextBox Grid.Column="1" x:Name="Date">Date</TextBox>
+                        <DatePicker Grid.Column="1"  x:Name="RunDate"></DatePicker>
                     </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -43,7 +43,32 @@
                         <Label Grid.Column="0">Distance</Label>
                         <TextBox Grid.Column="1" x:Name="inputDistance">Distance</TextBox>
                     </Grid>
-                    <Button x:Name="inputButton" Content="Save Run" Click="button_click"/>
+                    <Button x:Name="inputRunSave" Content="Save Run" Click="button_click"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Weight Entry" >
+                <StackPanel Grid.IsSharedSizeScope="True">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Date</Label>
+                        <DatePicker Grid.Column="1"  x:Name="WeightDate"></DatePicker>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0">Weight</Label>
+                        <TextBox Grid.Column="1" x:Name="WeightStones">St</TextBox>
+                        <TextBox Grid.Column="2" x:Name="WeightPounds">Lbs</TextBox>
+                        <TextBox Grid.Column="3" x:Name="WeightOunces">Oz</TextBox>
+                    </Grid>
+                    <Button x:Name="inputWeightSave" Content="Save Weight" Click="button_click"/>
                 </StackPanel>
             </TabItem>
         </TabControl>
