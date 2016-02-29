@@ -37,16 +37,13 @@ namespace FattyTrackerUi
 
             ////var newWeight2 = sender.DataContext as Weight;
 
-            var stones = int.Parse(WeightStones.Text);
-            var pounds = int.Parse(WeightPounds.Text);
-            var ounces = int.Parse(WeightOunces.Text);
+            var item = (WeightDetails)(sender as FrameworkElement).DataContext;
 
-            newWeight.Weight = new Weight
-            {
-                Stones = stones,
-                Pounds = pounds,
-                Ounces = ounces
-            };
+            ////var weightDetails = new WeightDetails
+            ////{
+            ////    Weight = item,
+            ////    Date = new DateTime()
+            ////};
         }
     }
 }

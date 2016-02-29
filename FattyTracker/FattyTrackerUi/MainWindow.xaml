@@ -50,7 +50,7 @@
             <TabItem Header="Weight Entry" >
                 <StackPanel Grid.IsSharedSizeScope="True">
                     <StackPanel.DataContext>
-                        <FattyTracker:Weight/>
+                        <FattyTracker:WeightDetails/>
                     </StackPanel.DataContext>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -58,7 +58,7 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0" Content="Date"/>
-                        <DatePicker Grid.Column="1"  x:Name="WeightDate"/>
+                        <DatePicker Grid.Column="1"  x:Name="WeightDate" Text="{Binding Path=Date}"/>
                     </Grid>
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -68,9 +68,9 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0" Content="Weight (St/Lbs/Oz)"/>
-                        <TextBox Grid.Column="1" x:Name="WeightStones" Text="{Binding Path=Stones}"/>
-                        <TextBox Grid.Column="2" x:Name="WeightPounds" Text="{Binding Path=Pounds}"/>
-                        <TextBox Grid.Column="3" x:Name="WeightOunces" Text="{Binding Path=Ounces}"/>
+                        <TextBox Grid.Column="1" x:Name="WeightStones" Text="{Binding Path=Weight.Stones}"/>
+                        <TextBox Grid.Column="2" x:Name="WeightPounds" Text="{Binding Path=Weight.Pounds}"/>
+                        <TextBox Grid.Column="3" x:Name="WeightOunces" Text="{Binding Path=Weight.Ounces}"/>
                     </Grid>
                     <Button x:Name="InputWeightSave" Content="Save Weight" Click="SaveWeight_Click"/>
                 </StackPanel>
