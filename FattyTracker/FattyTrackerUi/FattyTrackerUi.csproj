@@ -96,6 +96,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FattyTracker\FattyTracker.fsproj">
+      <Project>{b476290d-6788-49b9-8bdd-f105bfd3be6e}</Project>
+      <Name>FattyTracker</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
