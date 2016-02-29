@@ -68,11 +68,11 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         <Label Grid.Column="0" Content="Weight (St/Lbs/Oz)"/>
-                        <TextBox Grid.Column="1" x:Name="WeightStones"/>
-                        <TextBox Grid.Column="2" x:Name="WeightPounds"/>
-                        <TextBox Grid.Column="3" x:Name="WeightOunces"/>
+                        <TextBox Grid.Column="1" x:Name="WeightStones" Text="{Binding Path=Stones}"/>
+                        <TextBox Grid.Column="2" x:Name="WeightPounds" Text="{Binding Path=Pounds}"/>
+                        <TextBox Grid.Column="3" x:Name="WeightOunces" Text="{Binding Path=Ounces}"/>
                     </Grid>
-                    <Button x:Name="inputWeightSave" Content="Save Weight" Click="SaveWeight_Click"/>
+                    <Button x:Name="InputWeightSave" Content="Save Weight" Click="SaveWeight_Click"/>
                 </StackPanel>
             </TabItem>
         </TabControl>
