@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FattyTracker;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,22 @@ namespace FattyTrackerUi
         private void button_click(object sender, RoutedEventArgs e)
         {
             ////greetingOutput.Text = "Hello, " + nameInput.Text + "!";
+        }
+
+        private void SaveWeight_Click(object sender, RoutedEventArgs e)
+        {
+            var newWeight = new WeightDetails();
+
+            var stones = int.Parse(WeightStones.Text);
+            var pounds = int.Parse(WeightPounds.Text);
+            var ounces = int.Parse(WeightOunces.Text);
+
+            newWeight.Weight = new Weight
+            {
+                Stones = stones,
+                Pounds = pounds,
+                Ounces = ounces
+            };
         }
     }
 }
