@@ -26,9 +26,16 @@ namespace FattyTrackerUi
             InitializeComponent();
         }
 
-        private void button_click(object sender, RoutedEventArgs e)
+        private void SaveRun_click(object sender, RoutedEventArgs e)
         {
-            ////greetingOutput.Text = "Hello, " + nameInput.Text + "!";
+            var newRunDetails = new RunDetails();
+
+            var item = (RunDetails) (sender as FrameworkElement)?.DataContext;
+
+            if (item != null)
+            {
+
+            }
         }
 
         private void SaveWeight_Click(object sender, RoutedEventArgs e)
@@ -39,11 +46,18 @@ namespace FattyTrackerUi
 
             var item = (WeightDetails)(sender as FrameworkElement).DataContext;
 
-            ////var weightDetails = new WeightDetails
-            ////{
-            ////    Weight = item,
-            ////    Date = new DateTime()
-            ////};
+            if (item != null)
+            {
+
+            }
+        }
+
+        private void SaveDetails(WeightDetails details)
+        {
+        }
+
+        private void SaveDetails(RunDetails details)
+        {
         }
     }
 }

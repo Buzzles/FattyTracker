@@ -1,5 +1,9 @@
 ﻿namespace FattyTracker.DataAccess
 
+open FattyTracker
+
 type MongoConnector() = 
-    interface IDataAccess with
+    interface IDataStoreProvider with
         member this.Save() = printfn "MongoConnection"
+        member this.Save(x: WeightDetails) = printfn "SavingWeightDetails"
+        member this.Save(x : RunDetails) = printfn "SavingRunDetails"
