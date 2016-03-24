@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25029.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FattyTracker", "FattyTracker\FattyTracker.fsproj", "{B476290D-6788-49B9-8BDD-F105BFD3BE6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FattyTrackerUi", "FattyTrackerUi\FattyTrackerUi.csproj", "{B2A01360-18F2-4595-933C-BAA2A8C43E67}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FattyTracker.DataAccess", "FattyTracker.DataAccess\FattyTracker.DataAccess.fsproj", "{1FB85E60-FB7C-4056-81C6-CE586FB3EFE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B2A01360-18F2-4595-933C-BAA2A8C43E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2A01360-18F2-4595-933C-BAA2A8C43E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2A01360-18F2-4595-933C-BAA2A8C43E67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB85E60-FB7C-4056-81C6-CE586FB3EFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB85E60-FB7C-4056-81C6-CE586FB3EFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB85E60-FB7C-4056-81C6-CE586FB3EFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB85E60-FB7C-4056-81C6-CE586FB3EFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
