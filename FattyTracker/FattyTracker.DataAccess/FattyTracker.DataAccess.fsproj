@@ -51,10 +51,10 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Core.fs" />
     <None Include="Script.fsx" />
-    <Content Include="packages.config" />
+    <Compile Include="Core.fs" />
     <Compile Include="MongoTest.fs" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MongoDB.Bson">
