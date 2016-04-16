@@ -4,6 +4,7 @@ open MongoDB.Driver
 open MongoDB.Driver.Core
 open MongoDB.Bson
 
+// 192.168.99.100:32768 - Docker Port 27017/tcp
 let dockerIp = "192.168.99.100"
 let dockerPort = 32768
 
