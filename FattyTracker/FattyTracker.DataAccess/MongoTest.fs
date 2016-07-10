@@ -16,3 +16,13 @@ let mongoSettings =
 let _client = new MongoClient(mongoSettings);
 
 let _database = _client.GetDatabase("test");
+
+let testCall = 
+    let coll = _database.GetCollection<string>("teststrings")
+    let col2 = _database.GetCollection<BsonDocument>("wobble")
+    let fu = Builders<BsonDocument>.Filter
+    let ee = fu.Eq("test", "val")
+    let filter = new BsonDocument()
+    let cursor = coll.Find(fu)
+    let res = cursor.ToBsonDocument()
+    res.
