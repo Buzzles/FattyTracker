@@ -25,4 +25,4 @@ let testCall =
     let filter = new BsonDocument()
     let cursor = coll.Find(fu)
     let res = cursor.ToBsonDocument()
-    res.
+    res

@@ -58,8 +58,8 @@
     <Compile Include="DataAccess\IDataStoreProvider.fs" />
     <Compile Include="DataAccess\LocalFileStore.fs" />
     <Compile Include="DataAccess\DapperAccess.fs" />
-    <Compile Include="DataAccess\MongoConnector.fs" />
     <Compile Include="DataAccess\DataAccess.fs" />
+    <Compile Include="DataAccess\MongoConnector.fs" />
     <Compile Include="FattyTracker.fs" />
   </ItemGroup>
   <ItemGroup>

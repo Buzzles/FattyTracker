@@ -10,7 +10,7 @@
     <RootNamespace>FattyTracker.DataAccess</RootNamespace>
     <AssemblyName>FattyTracker.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
+    <TargetFSharpCoreVersion>4.5.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Name>FattyTracker.DataAccess</Name>
   </PropertyGroup>
@@ -57,6 +57,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="MongoDB.Bson">
       <HintPath>..\packages\MongoDB.Bson.2.2.3\lib\net45\MongoDB.Bson.dll</HintPath>
       <Private>True</Private>
@@ -70,9 +71,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
